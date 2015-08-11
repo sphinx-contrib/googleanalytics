@@ -4,7 +4,7 @@ import os
 from setuptools import setup, find_packages
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-long_desc = open(os.path.join(HERE, 'README')).read()
+long_desc = open(os.path.join(HERE, 'README.rst')).read()
 
 requires = ['Sphinx>=0.6']
 
