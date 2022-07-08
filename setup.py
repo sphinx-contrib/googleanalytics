@@ -4,14 +4,15 @@ import os
 from setuptools import setup, find_packages
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-long_desc = open(os.path.join(HERE, 'README.rst')).read()
+with open(os.path.join(HERE, 'README.rst')) as f:
+    long_desc = f.read()
 
 requires = ['Sphinx>=0.6']
 
 setup(
     name='sphinxcontrib-googleanalytics',
     version='0.1',
-    url='http://bitbucket.org/birkenfeld/sphinx-contrib',
+    url='https://github.com/sphinx-contrib/googleanalytics',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-googleanalytics',
     license='BSD',
     author='Domen Kozar',

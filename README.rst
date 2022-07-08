@@ -17,14 +17,14 @@ with Google Analytics web service.
 Installing from sphinx-contrib checkout
 ---------------------------------------
 
-Checkout sphinx-contrib::
+Checkout googleanalytics sphinx extension::
 
-  $ hg clone https://bitbucket.org/birkenfeld/sphinx-contrib/
+  $ git clone https://github.com/sphinx-contrib/googleanalytics
 
 Change into the googleanalytics directory::
 
-  $ cd sphinx-contrib/googleanalytics
-  
+  $ cd googleanalytics
+
 Install the module::
 
   $ python setup.py install
