@@ -11,7 +11,7 @@ requires = ['Sphinx>=0.6']
 
 setup(
     name='sphinxcontrib-googleanalytics',
-    version='0.1',
+    version='0.2',
     url='https://github.com/sphinx-contrib/googleanalytics',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-googleanalytics',
     license='BSD',
