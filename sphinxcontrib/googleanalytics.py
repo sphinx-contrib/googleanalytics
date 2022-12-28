@@ -33,4 +33,8 @@ def setup(app):
     app.add_config_value('googleanalytics_enabled', True, 'html')
     app.connect('html-page-context', add_ga_javascript)
     app.connect('builder-inited', check_config)
-    return {'version': '0.2'}
+    return {
+      'version': '0.3'
+      'parallel_read_safe': True,
+      'parallel_write_safe': True
+      }
