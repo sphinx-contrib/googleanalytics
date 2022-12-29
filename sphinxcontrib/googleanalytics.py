@@ -34,7 +34,7 @@ def setup(app):
     app.connect('html-page-context', add_ga_javascript)
     app.connect('builder-inited', check_config)
     return {
-      'version': '0.3'
+      'version': '0.3',
       'parallel_read_safe': True,
-      'parallel_write_safe': True
+      'parallel_write_safe': True,
       }
