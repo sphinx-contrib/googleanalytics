@@ -24,7 +24,7 @@ def add_ga_javascript(app, pagename, templatename, context, doctree):
 
 
 def check_config(app):
-    if not app.config.googleanalytics_id:
+    if app.config.googleanalytics_enabled and not app.config.googleanalytics_id:
         raise ExtensionError("'googleanalytics_id' config value must be set for ga statistics to function properly.")
 
 
