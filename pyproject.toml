@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sphinxcontrib-googleanalytics"
 version = "0.4"
-license = {text = "BSD"}
+license = "BSD-3-Clause"
 authors = [{name = "Domen Kozar", email = "domen@dev.si"}]
 maintainers = [{name = "Jelmer Vernooĳ", email = "jelmer@jelmer.uk"}]
 description = "Sphinx extension googleanalytics"
@@ -15,7 +15,6 @@ classifiers = [
     "Environment :: Console",
     "Environment :: Web Environment",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Topic :: Documentation",
@@ -31,15 +30,8 @@ Repository = "https://github.com/sphinx-contrib/googleanalytics"
 [tool.setuptools]
 zip-safe = false
 include-package-data = true
-namespace-packages = ["sphinxcontrib"]
 platforms = ["any"]
 
 [tool.setuptools.packages]
 find = {namespaces = false}
 
-[tool.distutils.egg_info]
-tag-build = "dev"
-tag-date = true
-
-[tool.aliases]
-release = "egg_info -RDb ''"
