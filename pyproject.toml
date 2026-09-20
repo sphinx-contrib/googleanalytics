@@ -31,7 +31,4 @@ Repository = "https://github.com/sphinx-contrib/googleanalytics"
 zip-safe = false
 include-package-data = true
 platforms = ["any"]
-
-[tool.setuptools.packages]
-find = {namespaces = false}
-
+py-modules = ["sphinxcontrib.googleanalytics"]
