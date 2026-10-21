@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sphinxcontrib-googleanalytics"
-version = "0.5"
+version = "0.6"
 license = "BSD-3-Clause"
 authors = [{name = "Domen Kozar", email = "domen@dev.si"}]
 maintainers = [{name = "Jelmer Vernooĳ", email = "jelmer@jelmer.uk"}]
