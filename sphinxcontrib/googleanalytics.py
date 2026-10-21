@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from sphinx.errors import ExtensionError
 
 
@@ -9,23 +6,18 @@ def add_ga_javascript(app, pagename, templatename, context, doctree):
         return
 
     metatags = context.get("metatags", "")
-    metatags += (
-        """
+    ga_id = app.config.googleanalytics_id
+    metatags += f"""
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>"""
-        % app.config.googleanalytics_id
-    )
-    metatags += (
-        """
+    <script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>"""
+    metatags += f"""
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(){{dataLayer.push(arguments);}}
         gtag('js', new Date());
-        gtag('config', '%s');
+        gtag('config', '{ga_id}');
     </script>
     """
-        % app.config.googleanalytics_id
-    )
     context["metatags"] = metatags
 
 
